@@ -111,8 +111,8 @@ class WoodCutterBuddy(object):
         /Format the cuts to be displayed/
         Re-arrange the cutting matrix so it can be displayed
         '''
-        print A
-        #print rhs
+        print(A)
+        #print(rhs)
         rhs = (np.ceil(rhs)).astype(int)
         A = A.astype(int)
         wood_pieces = []
@@ -244,4 +244,4 @@ if __name__ == "__main__":
     no = np.array([3, 3, 2, 3])
     wf = np.array([3.5, 4.5, 3.2, 4.])
     wcb = WoodCutterBuddy(plot=True)
-    print wcb.cutter(no, wf)
+    print(wcb.cutter(no, wf))
